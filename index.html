@@ -1,0 +1,89 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Privacy policy — Sprint Capacity Ledger for Jira</title>
+<style>
+  :root{--ink:#172b4d;--ink2:#44546f;--line:#dcdfe4;--brand:#0c66e4;--bg:#fff}
+  @media (prefers-color-scheme: dark){:root{--ink:#dfe1e6;--ink2:#9fadbc;--line:#2c333a;--brand:#579dff;--bg:#161a1d}}
+  *{box-sizing:border-box}
+  body{margin:0;background:var(--bg);color:var(--ink);
+       font:15px/1.65 -apple-system,BlinkMacSystemFont,"Segoe UI",Roboto,Helvetica,Arial,sans-serif}
+  main{max-width:760px;margin:0 auto;padding:48px 20px 80px}
+  h1{font-size:26px;line-height:1.25;margin:0 0 6px;letter-spacing:-.01em}
+  h2{font-size:16px;margin:34px 0 8px;letter-spacing:-.005em}
+  .meta{color:var(--ink2);font-size:13px;margin-bottom:28px}
+  p,li{color:var(--ink)}
+  table{border-collapse:collapse;width:100%;margin:12px 0;font-size:13.5px}
+  th,td{border:1px solid var(--line);padding:8px 10px;text-align:left;vertical-align:top}
+  th{font-size:12px;text-transform:uppercase;letter-spacing:.05em;color:var(--ink2)}
+  a{color:var(--brand)}
+  hr{border:0;border-top:1px solid var(--line);margin:34px 0}
+  .badge{display:inline-block;border:1px solid var(--line);border-radius:999px;
+         padding:2px 9px;font-size:12px;color:var(--ink2)}
+</style>
+</head>
+<body>
+<main>
+  <h1>Privacy policy — Sprint Capacity Ledger for Jira</h1>
+  <div class="meta">Last updated 24 November 2026 · <span class="badge">Runs on Atlassian</span></div>
+
+  <p>Sprint Capacity Ledger is an Atlassian Forge app. It runs entirely on Atlassian's infrastructure and
+  stores its data inside Atlassian Forge app storage. The app does not operate any server of its own and
+  does not send data to any third party.</p>
+
+  <h2>What the app stores</h2>
+  <table>
+    <tr><th>Data</th><th>Where</th><th>Why</th></tr>
+    <tr><td>Sprint plan settings (hours per story point, default hours/day, working days, sprint dates, holidays)</td>
+        <td>Forge app storage, keyed per board and sprint</td><td>To render the capacity calculation</td></tr>
+    <tr><td>Team roster (Atlassian account ID, display name, hours per day, active flag, per-day hour overrides)</td>
+        <td>Forge app storage, keyed per board and sprint</td><td>To compute daily and sprint capacity</td></tr>
+    <tr><td>Leave records (Atlassian account ID, display name, date range, leave type, optional hours, optional reason, who added it and when)</td>
+        <td>Forge app storage, keyed per board</td><td>To subtract absence from capacity</td></tr>
+    <tr><td>Board and project defaults (default project choice)</td>
+        <td>Forge app storage</td><td>To remember the user's setup</td></tr>
+  </table>
+  <p>Nothing else is collected. There is no telemetry, no analytics, no advertising and no profiling.</p>
+
+  <h2>What the app reads from Jira</h2>
+  <p>Read-only, at the moment a page is opened: boards, sprints, sprint dates, the project list, and the
+  users assignable to a project (for the team picker). The app never reads or writes issue content, never
+  transitions issues, and holds only <code>read:*</code> scopes plus <code>storage:app</code>.</p>
+
+  <h2>Data sharing</h2>
+  <p>None. The app makes no outbound network requests, which is why it qualifies for the
+  <strong>Runs on Atlassian</strong> programme. Atlassian hosts both the compute and the storage.
+  There are no sub-processors.</p>
+
+  <h2>Retention and deletion</h2>
+  <ul>
+    <li>Data lives as long as the app is installed.</li>
+    <li><strong>Uninstalling the app deletes its Forge storage</strong>, removing all plans, rosters and leave records.</li>
+    <li>Individual records can be deleted in the app at any time: leave records via <em>Remove</em>, people via
+        <em>Manage team → Remove</em>, day overrides via <em>Clear</em>.</li>
+  </ul>
+
+  <h2>Data location</h2>
+  <p>Wherever the customer's Atlassian cloud data is hosted, governed by Atlassian's data-residency
+  commitments. The app stores no copies elsewhere.</p>
+
+  <h2>Personal data</h2>
+  <p>The only personal data processed is what Jira already holds — Atlassian account ID and display name —
+  plus the working-hours and absence information a user deliberately enters. Legal basis is performance of
+  the customer's contract for the app.</p>
+
+  <h2>Contact</h2>
+  <p>Love Katoch — <a href="mailto:lovekashyapkatoch@gmail.com">lovekashyapkatoch@gmail.com</a>.
+  Security reports are acknowledged within 2 business days.</p>
+
+  <h2>Changes</h2>
+  <p>Material changes are published on this page and noted in the app's Marketplace listing version notes.</p>
+
+  <hr>
+  <p class="meta">Sprint Capacity Ledger for Jira is an independent app published by Love Katoch on the
+  Atlassian Marketplace. Atlassian and Jira are trademarks of Atlassian Pty Ltd.</p>
+</main>
+</body>
+</html>
